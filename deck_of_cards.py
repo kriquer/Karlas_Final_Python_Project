@@ -6,6 +6,14 @@ class Card:
         self.suit = suit
         self.number= number
 
+    def card_points(self):
+        #how to get point value of card
+        if isinstance(self.number, int):
+            return self.number
+        #needed if implementing jokers
+        else:
+            return 0
+
     def __str__(self):
         return f"{self.number} of {self.suit}"
 
@@ -15,8 +23,7 @@ class Card:
 # #test for Card Class
 # print(Card("Cups", 2))
 
-class Deck:
-    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords" with numbers 1-12
+class Deck:    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords" with numbers 1-12
     def __init__(self):
         suits = ["Cups", "Clubs", "Coins", "Swords"]
         numbers = []
@@ -44,9 +51,12 @@ class Deck:
         self.cards = self.cards[num_cards:]
         return dealt_cards
 
-    def remove(self):
-        #Remove cards from deck
-        return self.cards.remove
+    def points_hand(self, hand):
+        #sums the points in a player's hand
+        total = 0
+        for card in hand:
+            total += card.card_points()
+        return total
 
 
 # #test for Deck Class
