@@ -22,7 +22,7 @@ class Deck:
         numbers = []
         for n in range(1, 13):
             numbers.append(n)
-        #Create list of cards in deck
+        #Creates list of cards in deck
         self.cards = [Card(suit, number) for suit in suits for number in numbers]
 
         #Test to show the deck
@@ -38,9 +38,16 @@ class Deck:
         if num_cards > len(self.cards):
             print("There aren't sufficient cards")
             return None
+        #Deals cards
         dealt_cards = self.cards[:num_cards]
+        #Remove cards from deck
         self.cards = self.cards[num_cards:]
         return dealt_cards
+
+    def remove(self):
+        #Remove cards from deck
+        return self.cards.remove
+
 
 # #test for Deck Class
 # spanish_deck= Deck()
