@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Working..">
-      <change afterPath="$PROJECT_DIR$/Functions_Pedrito.py" afterDir="false" />
+    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Added a first action of player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deck_of_cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/deck_of_cards.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kriquer"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kriquer/Karlas_Final_Python_Project.git",
+    "accountId": "c07b2aae-8e4a-4151-89fd-2986e3757bd7"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -37,7 +47,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Functions_Deck_of_Cards.executor": "Run",
-    "Python.Project.executor": "Run",
+    "Python.Project.executor": "Debug",
     "Python.deck_of_cards.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -45,6 +55,11 @@
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Karla/PycharmProjects/Karla's_Final_Python_Project",
     "settings.editor.selected.configurable": "preferences.lookFeel"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "repository"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -78,7 +93,39 @@
       <option name="project" value="LOCAL" />
       <updated>1763228695632</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Deck of cards and first deal to computer and player coded. Still unsure which starting point would be better, if player against player or player against computer...">
+      <option name="closed" value="true" />
+      <created>1763585005632</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763585005632</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added a first action of player">
+      <option name="closed" value="true" />
+      <created>1763589941178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763589941178</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added a first action of player">
+      <option name="closed" value="true" />
+      <created>1763589962033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1763589962033</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added a first action of player">
+      <option name="closed" value="true" />
+      <created>1763590174284</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763590174284</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +141,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working.." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working.." />
+    <MESSAGE value="Deck of cards and first deal to computer and player coded. Still unsure which starting point would be better, if player against player or player against computer..." />
+    <MESSAGE value="Added a first action of player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a first action of player" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

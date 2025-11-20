@@ -44,3 +44,36 @@ if p1_choice == "A":
     else:
         print(f"Sorry {p1} you lost. Try again? ")
 
+if p1_choice == "B":
+    #deal a card to player 1
+    dealt_card = spanish_deck.deal(1)
+    print(f"You drew a {dealt_card}")
+    # print(p1_hand)
+    p1_card_choice = input(
+        "What do you want with your card? "
+        "A: Return the card to the deck? "
+        "B: Exchange card with one of your cards? "
+    )
+    if p1_card_choice == "A":
+        #take card from Player's hand and return to bottom(last position) of deck
+        returned_card = dealt_card[0]
+        spanish_deck.cards.append(returned_card)
+        #switch card in Player's hand
+    if p1_card_choice == "B":
+        card_switch = input("Which card do you want to switch, card in position 1, 2 ,3 or 4? ")
+        new_card = dealt_card[0] #makes card not a list variable
+        # switches card with chosen card by player
+        if card_switch == "1":
+            p1_hand.pop(0)
+            p1_hand.insert(0, new_card)
+        elif card_switch == "2":
+            p1_hand.pop(1)
+            p1_hand.insert(1, new_card)
+        elif card_switch == "3":
+            p1_hand.pop(2)
+            p1_hand.insert(2, new_card)
+        else:
+            p1_hand.pop(3)
+            p1_hand.insert(3, new_card)
+
+print(f"{p1}'s hand is {p1_hand}")
