@@ -58,13 +58,23 @@ class Deck:    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords
             total += card.card_points()
         return total
 
+    def points_2cards(self, hand):
+        #sums the points in a player's last 2 cards in his/her hand
+        total = 0
+        for card in hand[-2:]:
+            total += card.card_points()
+        return total
+
 
 # #test for Deck Class
 # spanish_deck= Deck()
 # print(spanish_deck)
-
+#
 # #Test for deal method
-# spanish_deck.deal(4)
-# print (spanish_deck.deal(4))
+# hand = spanish_deck.deal(4)
+# print(hand)
+#
+# #Test for function points_2cards
+# print(spanish_deck.points_2cards(hand))
 
 
