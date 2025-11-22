@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Continued the computer's turn">
+    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Created a Player class, defined an exchange card function, continued working on computer's turn logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Functions_Pedrito.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions_Pedrito.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deck_of_cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/deck_of_cards.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,25 +44,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Functions_Deck_of_Cards.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Project.executor&quot;: &quot;Run&quot;,
-    &quot;Python.deck_of_cards.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Karla/PycharmProjects/Karla's_Final_Python_Project&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Functions_Deck_of_Cards.executor": "Run",
+    "Python.Functions_Pedrito.executor": "Run",
+    "Python.Project.executor": "Run",
+    "Python.deck_of_cards.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Karla/PycharmProjects/Karla's_Final_Python_Project",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -151,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763765725177</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created a Player class, defined an exchange card function, continued working on computer's turn logic">
+      <option name="closed" value="true" />
+      <created>1763845830370</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1763845830371</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +180,7 @@
     <MESSAGE value="simulated an entire player's turn" />
     <MESSAGE value="Started the computer's turn. If too complicated will start instead with player vs. player instead of player vs. computer" />
     <MESSAGE value="Continued the computer's turn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continued the computer's turn" />
+    <MESSAGE value="Created a Player class, defined an exchange card function, continued working on computer's turn logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Player class, defined an exchange card function, continued working on computer's turn logic" />
   </component>
 </project>
