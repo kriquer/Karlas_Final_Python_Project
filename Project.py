@@ -83,13 +83,12 @@ print("Now it is my turn!")
 sum_c_hand_2cards = spanish_deck.points_2cards(c_hand)
 
 #test to get points of front cards in computer's hand
-print(sum_c_hand_2cards)
+print(f"Sum of my 2 lower cards is {sum_c_hand_2cards}")
 
 #randomize if computer calls Pedrito if cards are low
-if sum_c_hand_2cards < 4:
-    random_choice = randint(1, 10)
-    if random_choice < 7:
-        print("Pedrito! ")
+random_choice = randint(1, 10)
+if sum_c_hand_2cards <= 4 and random_choice < 7:
+    print("Pedrito! ")
 
 #if computer does not call Pedrito deal a card to computer
 dealt_card = spanish_deck.deal(1)
@@ -98,7 +97,7 @@ dealt_card = dealt_card[0] #makes card not a list variable
 points_dealt_card = deck_of_cards.Card.card_points(dealt_card) #gets point value of the dealt card
 
 #test to get point value of 1 card
-print(points_dealt_card)
+#print(points_dealt_card)
 
 '''Computer's choices for it's dealt card are:
     Discard card to graveyard deck
@@ -112,13 +111,13 @@ if points_dealt_card >= 10:
 print(f"Graveyard deck so far is {graveyard_deck}")
 
 #first have to return value of top cards in computer's hand
-card0 = c_hand(0)
+card0 = c_hand[0]
 points_card0 = deck_of_cards.Card.card_points(card0)
-card1 = c_hand(1)
+card1 = c_hand[1]
 points_card1 = deck_of_cards.Card.card_points(card1)
-card2 = c_hand(2)
+card2 = c_hand[2]
 points_card2 = deck_of_cards.Card.card_points(card2)
-card3 = c_hand(3)
+card3 = c_hand[3]
 points_card3 = deck_of_cards.Card.card_points(card3)
 
 random_choice = randint(1, 10)
@@ -130,24 +129,14 @@ if random_choice < 7: #this means computer remembers cards 2 and 3
        pass#exchange the card and add discarded card into graveyard deck
     else: #computer knows cards 2 and 3 are low so wants to exchange with unknown cards 0 and 1
         if points_dealt_card <= 4:
-        random_choice = randint(1, 2)
-        if random_choice == 1 #exchange the card with card 0 and add discarded card into graveyard deck
-            pass
-        else:
-            pass #exchange the card with card 1 and add discarded card into graveyard deck
+            position = randint(1, 2)
+            Functions_Pedrito.exchange_card(dealt_card, position)
 elif points_dealt_card <= 4: #computer does not remember any cards so wants to exchange with any card
-    random_choice = randint(1, 4)
-    if random_choice == 1:  # exchange the card with card 0 and add discarded card into graveyard deck
-        pass
-    else:
-        pass  # exchange the card with card 1 and add discarded card into graveyard deck
-    pass
-
+    position = randint(1, 4)
+    Functions_Pedrito.exchange_card(dealt_card, position)
 else: #discard card into graveyard deck
-
-        # p1_hand.pop(0)
-        # p1_hand.insert(0, new_card)
-
+    returned_card = dealt_card[0]
+    graveyard_deck.insert(0, returned_card)
 
 # print(f"Computer's's hand is now {c_hand} ")
 

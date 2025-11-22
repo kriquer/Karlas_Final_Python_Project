@@ -65,7 +65,6 @@ class Deck:    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords
             total += card.card_points()
         return total
 
-
 # #test for Deck Class
 # spanish_deck= Deck()
 # print(spanish_deck)
@@ -77,4 +76,16 @@ class Deck:    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords
 # #Test for function points_2cards
 # print(spanish_deck.points_2cards(hand))
 
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.hand = []
+
+    def add_cards(self, cards):
+        self.hand.extend(cards)
+
+    def exchange_card(self, new_card, position):
+        # Replace the card in hand at 1–4
+        index = position - 1
+        self.hand[index] = new_card
 
