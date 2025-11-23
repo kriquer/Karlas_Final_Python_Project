@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Created a Player class, defined an exchange card function, continued working on computer's turn logic">
+    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Made loop for continous playing, simplified version of game is now done! Need to just add taking a card from graveyard option, card 7,8,9 options, jokers and error handling.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions_Pedrito.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions_Pedrito.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions_Pedrito.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_Pedrito.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,7 @@
     "Python.Functions_Pedrito.executor": "Run",
     "Python.Project.executor": "Run",
     "Python.deck_of_cards.executor": "Run",
+    "Python.functions_Pedrito.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -159,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763845830371</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Made loop for continous playing, simplified version of game is now done! Need to just add taking a card from graveyard option, card 7,8,9 options, jokers and error handling.">
+      <option name="closed" value="true" />
+      <created>1763851689707</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1763851689707</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +190,7 @@
     <MESSAGE value="Started the computer's turn. If too complicated will start instead with player vs. player instead of player vs. computer" />
     <MESSAGE value="Continued the computer's turn" />
     <MESSAGE value="Created a Player class, defined an exchange card function, continued working on computer's turn logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Player class, defined an exchange card function, continued working on computer's turn logic" />
+    <MESSAGE value="Made loop for continous playing, simplified version of game is now done! Need to just add taking a card from graveyard option, card 7,8,9 options, jokers and error handling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made loop for continous playing, simplified version of game is now done! Need to just add taking a card from graveyard option, card 7,8,9 options, jokers and error handling." />
   </component>
 </project>
