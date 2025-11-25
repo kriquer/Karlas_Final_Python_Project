@@ -51,19 +51,33 @@ class Deck:    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords
         self.cards = self.cards[num_cards:]
         return dealt_cards
 
-    def points_hand(self, hand):
-        #sums the points in a player's hand
-        total = 0
-        for card in hand:
-            total += card.card_points()
-        return total
+    def points_dealt_card(self, dealt_card):
+        dealt_card = dealt_card[0]
+        return dealt_card.card_points()
 
-    def points_2cards(self, hand):
-        #sums the points in a player's last 2 cards in his/her hand
-        total = 0
-        for card in hand[-2:]:
-            total += card.card_points()
-        return total
+    # def points_hand(self, hand):
+    #     #sums the points in a player's hand
+    #     total = 0
+    #     for card in hand:
+    #         total += card.card_points()
+    #     return total
+    #
+    # def points_2cards(self, hand):
+    #     #sums the points in a player's last 2 cards in his/her hand
+    #     total = 0
+    #     for card in hand[-2:]:
+    #         total += card.card_points()
+    #     return total
+
+class Graveyard_Deck:
+    def __init__(self):
+        self.graveyard_deck = []
+
+    def __str__(self):
+        return f"{self.graveyard_deck}"
+
+    def shuffle(self):
+        random.shuffle(self.graveyard_deck)
 
 # #test for Deck Class
 # spanish_deck= Deck()
@@ -73,19 +87,10 @@ class Deck:    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords
 # hand = spanish_deck.deal(4)
 # print(hand)
 #
+# #Test for dealt card points
+# dealt_card = spanish_deck.deal(1)
+# print(spanish_deck.points_dealt_card(dealt_card))
+#
+
 # #Test for function points_2cards
 # print(spanish_deck.points_2cards(hand))
-
-class Player:
-    def __init__(self, name):
-        self.name = name
-        self.hand = []
-
-    def add_cards(self, cards):
-        self.hand.extend(cards)
-
-    def exchange_card(self, new_card, position):
-        # Replace the card in hand at 1–4
-        index = position - 1
-        self.hand[index] = new_card
-
