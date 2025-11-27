@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Added 7,8,9 options for player.">
-      <change afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deck_of_cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/decks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions_Pedrito.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_Pedrito.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decks.py" beforeDir="false" afterPath="$PROJECT_DIR$/decks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
     "Python.Functions_Pedrito.executor": "Run",
     "Python.Project.executor": "Run",
     "Python.deck_of_cards.executor": "Run",
+    "Python.decks.executor": "Run",
     "Python.functions_Pedrito.executor": "Run",
     "Python.player.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -179,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763932024923</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck">
+      <option name="closed" value="true" />
+      <created>1764191136637</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1764191136638</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +211,7 @@
     <MESSAGE value="Created a Player class, defined an exchange card function, continued working on computer's turn logic" />
     <MESSAGE value="Made loop for continous playing, simplified version of game is now done! Need to just add taking a card from graveyard option, card 7,8,9 options, jokers and error handling." />
     <MESSAGE value="Added 7,8,9 options for player." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 7,8,9 options for player." />
+    <MESSAGE value="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck" />
   </component>
 </project>
