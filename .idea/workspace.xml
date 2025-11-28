@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decks.py" beforeDir="false" afterPath="$PROJECT_DIR$/decks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-    </list>
+    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Game fully working!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +182,31 @@
       <option name="project" value="LOCAL" />
       <updated>1764191136638</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="finished player class, game works.&#10;Need to make 7,8,9 function for computer">
+      <option name="closed" value="true" />
+      <created>1764281224168</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1764281224168</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finished player class, game works.&#10;Need to make 7,8,9 function for computer">
+      <option name="closed" value="true" />
+      <created>1764281237149</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1764281237149</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Game fully working!">
+      <option name="closed" value="true" />
+      <created>1764325110043</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1764325110043</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +231,8 @@
     <MESSAGE value="Made loop for continous playing, simplified version of game is now done! Need to just add taking a card from graveyard option, card 7,8,9 options, jokers and error handling." />
     <MESSAGE value="Added 7,8,9 options for player." />
     <MESSAGE value="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck" />
+    <MESSAGE value="finished player class, game works.&#10;Need to make 7,8,9 function for computer" />
+    <MESSAGE value="Game fully working!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game fully working!" />
   </component>
 </project>

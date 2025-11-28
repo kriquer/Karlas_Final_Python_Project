@@ -18,7 +18,7 @@ p1_hand = spanish_deck.deal(4) #deals 4 cards to player
 p1 = player.Human_Player(p1_name, p1_hand)
 
 cpu_hand = spanish_deck.deal(4) #deals 4 cards to computer
-cpu = player.Player("Computer", cpu_hand)
+cpu = player.Computer_Player("Computer", cpu_hand)
 
 # #Test to see computer's hand
 # print(f"Test for computer's hand {cpu.hand}")
@@ -58,7 +58,7 @@ for i in range(1000):
             if p1_card_choice.upper() == "A":
                 #take card from Player's hand and discard into top(first position in list) of graveyard deck
                 graveyard_deck.insert(0, dealt_card)
-            if p1_card_choice.upper() == "B":
+            elif p1_card_choice.upper() == "B":
               #switch card in Player's hand
                 pos = int(input("Which card do you want to switch, card in position 1, 2 ,3 or 4? "))
                 #switches card with chosen card by player
@@ -73,7 +73,7 @@ for i in range(1000):
 
     # print(f"Test to check player's {p1}'s hand {p1.hand}")
 
-    print(f"Graveyard deck has {graveyard_deck}")
+    print(f"Graveyard deck so far has {graveyard_deck}")
 
     #start of computer's turn
     print("Now it is my turn!")
@@ -100,11 +100,15 @@ for i in range(1000):
 
     '''Computer's choices for it's dealt card are:
         Discard card to graveyard deck
-        Exchange card with one of it's own cards'''
+        Exchange card with one of it's own cards
+        With 7 or 8 cards it does nothing
+        With 9 cards it randomsly changes a card in it's own hand with one from another player's hand'''
     random_choice = randint(1, 10)
     if points_dealt_card >= 10:
         #discards card into graveyard deck
         graveyard_deck.insert(0, dealt_card)
+    elif spanish_deck.points_dealt_card(dealt_card) == 7 or spanish_deck.points_dealt_card(dealt_card) == 8 or spanish_deck.points_dealt_card(dealt_card) == 9:
+            cpu.cards_789(p1, dealt_card, graveyard_deck)
     elif random_choice < 7: #this means computer remembers cards 2 and 3
         #puts dealt card in position 2 or 3 of computer's hand
         #first have to return value of cards in computer's hand
@@ -131,5 +135,5 @@ for i in range(1000):
         graveyard_deck.insert(0, dealt_card)
 
     #print(f"Test to check computer's's hand {c.hand} ")
-    print(f"Graveyard deck so far is {graveyard_deck}")
+    print(f"Graveyard deck so far has {graveyard_deck}")
 
