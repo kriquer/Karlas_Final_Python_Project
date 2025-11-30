@@ -61,7 +61,7 @@ if __name__ == "__main__":
                     graveyard_deck.insert(0, dealt_card)
                 elif p1_card_choice.upper() == "B":
                   #switch card in Player's hand
-                    pos = functions_error_handling.get_int_input("Which card do you want to switch, card in position 1, 2 ,3 or 4? ", 1, 4)
+                    pos = functions_error_handling.get_int_input("Which card do you want to switch, card in position 1, 2, 3 or 4? ", 1, 4)
                     #switches card with chosen card by player
                     if pos == 1:
                         p1.exchange_card(dealt_card, 0,  graveyard_deck)

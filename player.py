@@ -103,4 +103,4 @@ class Computer_Player(Player):#Class for computer players
             card_from_opponent = opponent.hand.pop(pos2)
             self.hand.insert(pos1, card_from_opponent)
             opponent.hand.insert(pos2, card_from_computer)
-            print(f"{self.name} exchanged it's card in positon {pos1 + 1} with the card in position {pos2 + 2} from player {opponent.name}. ")
+            print(f"{self.name} exchanged it's card in positon {pos1 + 1} with the card in position {pos2 + 1} from player {opponent.name}. ")
