@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Game fully working!" />
+    <list default="true" id="f9097c9b-da1a-47cd-b9e0-9bba1ec505c5" name="Changes" comment="Game fully working! Added print statement for amount of points when someone calls Pedrito.">
+      <change afterPath="$PROJECT_DIR$/functions_error_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decks.py" beforeDir="false" afterPath="$PROJECT_DIR$/decks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +54,7 @@
     "Python.deck_of_cards.executor": "Run",
     "Python.decks.executor": "Run",
     "Python.functions_Pedrito.executor": "Run",
+    "Python.functions_error_handling.executor": "Run",
     "Python.player.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -206,7 +212,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764325110043</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Game fully working!">
+      <option name="closed" value="true" />
+      <created>1764325410893</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1764325410893</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Game fully working! Added print statement for amount of points when someone calls Pedrito.">
+      <option name="closed" value="true" />
+      <created>1764496689362</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1764496689362</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +255,7 @@
     <MESSAGE value="Optimized code, added Player class. To do's: implement complete player class, add option to pick up card from the graveyard deck" />
     <MESSAGE value="finished player class, game works.&#10;Need to make 7,8,9 function for computer" />
     <MESSAGE value="Game fully working!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game fully working!" />
+    <MESSAGE value="Game fully working! Added print statement for amount of points when someone calls Pedrito." />
+    <option name="LAST_COMMIT_MESSAGE" value="Game fully working! Added print statement for amount of points when someone calls Pedrito." />
   </component>
 </project>

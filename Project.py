@@ -2,6 +2,7 @@
 from random import randint
 import decks
 import player
+import functions_error_handling
 
 if __name__ == "__main__":
     #hello
@@ -22,10 +23,10 @@ if __name__ == "__main__":
     cpu_hand = spanish_deck.deal(4) #deals 4 cards to computer
     cpu = player.Computer_Player("Computer", cpu_hand)
 
-    # #Test to see computer's hand
-    # print(f"Test for computer's hand {cpu.hand}")
-    # Test to see player1's hand
-    # print(f"Test for player {p1}'s hand {p1.hand}")
+    ##Test to see computer's hand
+    #print(f"Test for computer's hand {cpu.hand}")
+    ##Test to see player1's hand
+    #print(f"Test for player {p1}'s hand {p1.hand}")
 
     print(f"Nice. Now let's play some Pedrito {p1}! Don't forget to call Pedrito "
           f"when you think you have less points than the other players.")
@@ -33,8 +34,7 @@ if __name__ == "__main__":
 
     for i in range(1000):
         #Player1 goes first
-        p1_choice = input("Your turn! Want to call Pedrito or take a card? Choose A for calling Pedrito or B for taking a card. ")
-        #Future add on: use try block for checking A or B
+        p1_choice = functions_error_handling.get_choice("Your turn! Want to call Pedrito or take a card? Choose A for calling Pedrito or B for taking a card. ", ["A", "B"])
         if p1_choice.upper() == "A":
             p1.points_hand(p1.hand)
             cpu.points_hand(cpu.hand)
@@ -42,7 +42,7 @@ if __name__ == "__main__":
             if p1.points_hand(p1.hand) < cpu.points_hand(cpu.hand):
                 print("Congrats! You won Pedrito! ")
             else:
-                print(f"Sorry {p1} you lost. Try again? ")#Future add on: if lost add loop to restart game if player wants
+                print(f"Sorry {p1} you lost. ")#Future add on: if lost add loop to restart game if player wants
             break
         if p1_choice.upper() == "B":
             #deal a card to player 1
@@ -52,17 +52,16 @@ if __name__ == "__main__":
             if spanish_deck.points_dealt_card(dealt_card) == 7 or spanish_deck.points_dealt_card(dealt_card) == 8 or spanish_deck.points_dealt_card(dealt_card) == 9:
                 p1.cards_789(cpu, dealt_card, graveyard_deck)
             else:
-                p1_card_choice = input(
-                "What do you want with your card? "
-                "A: Discard the card to the graveyard deck? "
-                "B: Exchange card with one of your cards? "
+                p1_card_choice = functions_error_handling.get_choice(
+                "What do you want with your card? A: Discard the card to the graveyard deck? B: Exchange card with one of your cards? ",
+                ["A", "B"]
                 )
                 if p1_card_choice.upper() == "A":
                     #take card from Player's hand and discard into top(first position in list) of graveyard deck
                     graveyard_deck.insert(0, dealt_card)
                 elif p1_card_choice.upper() == "B":
                   #switch card in Player's hand
-                    pos = int(input("Which card do you want to switch, card in position 1, 2 ,3 or 4? "))
+                    pos = functions_error_handling.get_int_input("Which card do you want to switch, card in position 1, 2 ,3 or 4? ", 1, 4)
                     #switches card with chosen card by player
                     if pos == 1:
                         p1.exchange_card(dealt_card, 0,  graveyard_deck)
@@ -73,7 +72,7 @@ if __name__ == "__main__":
                     else:
                         p1.exchange_card(dealt_card, 3, graveyard_deck)
 
-        # print(f"Test to check player's {p1}'s hand {p1.hand}")
+        #print(f"Test to check player's {p1}'s hand {p1.hand}")
 
         print(f"Graveyard deck so far has {graveyard_deck}")
 
@@ -84,7 +83,7 @@ if __name__ == "__main__":
         p1.points_hand(p1.hand)
 
         #test to get points of front cards in computer's hand
-        # print(f"Test for sum of computer's lower cards {cpu.points_2cards(cpu.hand)}")
+        #print(f"Test for sum of computer's lower cards {cpu.points_2cards(cpu.hand)}")
 
         #randomize if computer calls Pedrito if cards are low
         random_choice = randint(1, 10)
@@ -106,7 +105,7 @@ if __name__ == "__main__":
             Discard card to graveyard deck
             Exchange card with one of it's own cards
             With 7 or 8 cards it does nothing
-            With 9 cards it randomsly changes a card in it's own hand with one from another player's hand'''
+            With 9 cards it randomly changes a card in it's own hand with one from another player's hand'''
         random_choice = randint(1, 10)
         if points_dealt_card >= 10:
             #discards card into graveyard deck
@@ -117,7 +116,7 @@ if __name__ == "__main__":
             #puts dealt card in position 2 or 3 of computer's hand
             #first have to return value of cards in computer's hand
             values = cpu.get_card_values()
-            # print("Test for card values list", values)
+            #print("Test for card values list", values)
             points_card2 = values[2]
             points_card3 = values[3]
             if points_dealt_card < points_card2 and points_card2 >= points_card3:

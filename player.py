@@ -1,4 +1,7 @@
+"""Classes for Player inherited human and computer players classes"""
+
 import decks
+import functions_error_handling
 from random import randint
 
 class Player:
@@ -13,7 +16,7 @@ class Player:
         return str(self)
 
     def exchange_card(self, dealt_card, position, graveyard_deck):
-        # exchanges a dealt card with another card in player's hand and adds discarded card into graveyard deck
+        #exchanges a dealt card with another card in player's hand and adds discarded card into graveyard deck
         if type(dealt_card) == 'list':
             dealt_card = dealt_card[0]
         card = self.hand.pop(position)
@@ -28,14 +31,14 @@ class Player:
         return values
 
     def points_hand(self, hand):
-        # sums the points in a player's hand
+        #sums the points in a player's hand
         total = 0
         for card in hand:
             total += card.card_points()
         return total
 
     def points_2cards(self, hand):
-        # sums the points in a player's last 2 cards in his/her hand
+        #sums the points in a player's last 2 cards in his/her hand
         total = 0
         for card in hand[-2:]:
             total += card.card_points()
@@ -57,15 +60,18 @@ class Human_Player(Player): #Class for human players
         graveyard_deck.insert(0, dealt_card)#discard card
         points = decks.Deck.points_dealt_card(self, dealt_card)
         if points == 7:
-            pos = int(input("You got a 7 card. You can look at a card in your hand. Which one would you want to see? Card 1, 2, 3 or 4? "))
+            pos = functions_error_handling.get_int_input("You got a 7 card. You can look at a card in your hand. Which one would you want to see? Card 1, 2, 3 or 4? ",
+                                                         1, 4)
             print(f"The card in this position is a {self.hand[pos - 1]}. ")
         elif points == 8:
-            pos = int(input("You got an 8 card. You can look at a card in the computer's hand. Which one would you want to see? Card 1, 2, 3 or 4? "))
+            pos = functions_error_handling.get_int_input("You got an 8 card. You can look at a card in the computer's hand. Which one would you want to see? Card 1, 2, 3 or 4? ",
+                                                         1, 4)
             print(f"The card in this position is a {opponent.hand[pos - 1]}. ")
         elif points == 9:
-            pos1 = int(input("You got a 9 card. You can exchange a card from your hand with one in the computer's hand. "
-                                "Which one from your hand would you want to exchange? Card 1, 2, 3 or 4? "))
-            pos2 = int(input("And which card in the computer's hand would you want to exchange? Card 1, 2, 3 or 4? "))
+            pos1 = functions_error_handling.get_int_input("You got a 9 card. You can exchange a card from your hand with one in the computer's hand. Which one from your hand would you want to exchange? Card 1, 2, 3 or 4? ",
+                                                          1, 4)
+            pos2 = functions_error_handling.get_int_input("And which card in the computer's hand would you want to exchange? Card 1, 2, 3 or 4? ",
+                                                          1, 4)
             card_from_player = self.hand.pop(pos1 - 1)
             card_from_opponent = opponent.hand.pop(pos2 - 1)
             self.hand.insert(pos1 - 1, card_from_opponent)
@@ -87,7 +93,7 @@ class Computer_Player(Player):#Class for computer players
             dealt_card = dealt_card[0]
         points = decks.Deck.points_dealt_card(self, dealt_card)
         if points == 7 or points == 8:
-            graveyard_deck.insert(0, dealt_card)  # discard card, later addon could be that computer sees it's own card or
+            graveyard_deck.insert(0, dealt_card)  #discard card, later addon could be that computer sees it's own card or
             # other player's card and based on it's value increases it chances of calling Pedrito
         elif points == 9:
             graveyard_deck.insert(0, dealt_card)

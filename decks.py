@@ -1,3 +1,5 @@
+"""Classes for card and a deck"""
+
 import random
 
 class Card:
@@ -20,10 +22,10 @@ class Card:
     def __repr__(self):
         return str(self)
 
-# #test for Card Class
-# print(Card("Cups", 2))
+##test for Card Class
+#print(Card("Cups", 2))
 
-class Deck:    # makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords" with numbers 1-12, future addon would be to add 2 jokers
+class Deck:    #makes the deck of cards, 4 suits "Cups, Clubs, Coins and Swords" with numbers 1-12, future addon would be to add 2 jokers
     def __init__(self):
         suits = ["Cups", "Clubs", "Coins", "Swords"]
         numbers = []
