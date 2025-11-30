@@ -89,7 +89,10 @@ if __name__ == "__main__":
         random_choice = randint(1, 10)
         if cpu.points_2cards(cpu.hand) <= 4 and random_choice <= 7:
             print(f"{cpu} calls Pedrito! {p1} has {p1.points_hand(p1.hand)} points and the computer player has {cpu.points_hand(cpu.hand)} points. ")
-            print("Computer calls Pedrito! ")
+            if p1.points_hand(p1.hand) <= cpu.points_hand(cpu.hand):
+                print("Computer lost!" )
+            elif cpu.points_hand(cpu.hand) < p1.points_hand(p1.hand) :
+                print("Computer won!")
             break
 
         #if computer does not call Pedrito deal a card to computer
